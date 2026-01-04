@@ -1,0 +1,21 @@
+# render.yaml - Render Blueprint for CampusAlert Backend
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: campusalert-api
+    env: node
+    region: singapore # Choose closest region to you
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false # Set this manually in Render dashboard
+      - key: JWT_SECRET
+        generateValue: true # Auto-generate secure secret
+      - key: FRONTEND_URL
+        sync: false # Set this to your Vercel URL after deployment
