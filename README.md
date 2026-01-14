@@ -24,7 +24,7 @@ A modern, presentation-ready MERN stack application for managing college grievan
 
 ### 📊 Enhancement #4: Visual Status Timeline
 - `StatusStepper` component with 3 steps: Submitted → Reviewed → Resolved
-- Animated progress indicators
+- Animated progress indicators   fsrfr
 - Color-coded states (green for completed, blue for active, gray for pending)
 
 ### 🎨 Enhancement #5: UI Polish
@@ -251,7 +251,7 @@ Click **"Try Demo Account"** on the landing page to auto-login!
    cd client
    npm run build
    ```
-
+this is the faild project
 2. **The server is configured to serve the client build in production mode**
 
 3. **Deploy to Render** with these settings:
